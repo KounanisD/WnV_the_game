@@ -1,0 +1,4 @@
+﻿  Level.cpp
+C:\Users\jimko\source\repos\WnV_the_game\WnV_the_game\Level.cpp(30,48): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\jimko\source\repos\WnV_the_game\WnV_the_game\Level.cpp(416,51): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  WnV_the_game.vcxproj -> C:\Users\jimko\source\repos\WnV_the_game\x64\Debug\WnV_the_game.exe
