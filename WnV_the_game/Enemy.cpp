@@ -1,6 +1,7 @@
-#include "Enemy.h"
+/*#include "Enemy.h"
 #include <random>
 #include <ctime>
+#include "Entity.h"
 
 
 using namespace std;
@@ -86,3 +87,4 @@ char Enemy::getMove() {
 
 	}
 }
+*/

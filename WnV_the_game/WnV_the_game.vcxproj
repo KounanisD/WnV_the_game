@@ -127,16 +127,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Enemy.h" />
     <ClInclude Include="Entity.h" />
-    <ClInclude Include="Player.h" />
     <ClInclude Include="Level.h" />
     <ClInclude Include="WnV.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="Entity.cpp" />
-    <ClCompile Include="Player.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Level.cpp" />
     <ClCompile Include="WnV.cpp" />

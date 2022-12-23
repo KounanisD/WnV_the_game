@@ -1,10 +1,7 @@
 #include "WnV.h"
-#include "Player.h"
+#include "Entity.h"
 #include <iostream>
 #include <conio.h>
-#include "Enemy.h"
-
-
 
 bool turn = true; 
 int _tpt;
@@ -43,7 +40,7 @@ error:
 		case 'V':
 		case 'v':
 			_tpt = 0;
-			_player.init(1, 0);
+			_player.init(1,0);
 			break;
 		default:
 			cout << "Invalid input, try again(W or V)\n";

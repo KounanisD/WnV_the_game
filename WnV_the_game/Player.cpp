@@ -1,4 +1,5 @@
-#include "Player.h"
+/*#include "Player.h"
+#include "Entity.h"
 
 
 
@@ -43,3 +44,4 @@ int Player::checkPot(int& pot, bool turn, int pt) {
 	}
 	else return 0;
 }
+*/

@@ -1,11 +1,12 @@
 #include "Level.h"
+#include "WnV.h"
+#include "Entity.h"
 #include <fstream>
 #include <iostream>
 #include <cstdio>
 #include <random>
 #include <ctime>
-#include "Player.h"
-#include "WnV.h"
+
 
 
 int Wcount = 0; //global variables to use later for enemies count
@@ -170,13 +171,13 @@ void Level::load(string fileName,Player& player) {
 				player.setPosition(j, i);
 				break;
 			case 'W':
-				_enemies.push_back(Enemy(tile,0, 0, 3, 0, 0));
+				_enemies.push_back(Enemy(tile,0,0,0,3,0));
 				_enemies.back().setStats();
 				_enemies.back().setPosition(j, i);
 				++Wcount;
 				break;
 			case 'V':
-				_enemies.push_back(Enemy(tile, 0, 0, 3, 0, 1));
+				_enemies.push_back(Enemy(tile, 0, 0, 0, 3, 1));
 				_enemies.back().setStats();
 				_enemies.back().setPosition(j, i);
 				++Vcount;
@@ -332,6 +333,7 @@ void Level::load(string fileName,Player& player) {
 				}
 			
 			}
+
 			void Level::processEnemyMove(int enemyIndex, int targetX, int targetY) {
 				  
 				int enemyX;
@@ -367,7 +369,7 @@ void Level::load(string fileName,Player& player) {
 
 					for (int j = 0; j < _enemies.size(); j++) {
 
-						_enemies[j].getPosition(targetX, targetY);
+						 _enemies[j].getPosition(targetX, targetY);
 
 						if (((enemyX + 1) == targetX) && (targetY == enemyY)) {
 

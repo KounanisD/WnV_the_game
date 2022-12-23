@@ -1,4 +1,4 @@
-#pragma once
+/*#pragma once
 #include<iostream>
 #include <string>
 #include <cstdlib>
@@ -33,3 +33,4 @@ private:
 	int _x;
 	int _y;
 };
+*/

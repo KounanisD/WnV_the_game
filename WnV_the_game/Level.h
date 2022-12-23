@@ -1,8 +1,7 @@
 #pragma once
-#include "Player.h"
-#include "Enemy.h"
 #include <vector>
 #include <string>
+#include "Entity.h"
 
 using namespace std;
 
@@ -19,12 +18,16 @@ public:
 	void usePot(Player& player);            //obj player function to heal chosen team
 
 	void movePlayer(char input, Player &player);  //moving function based on input
-	void updateEnemy();                            //random generated enemies moving algorithm
+	void updateEnemy();  //random generated enemies moving algorithm
+
+
 	char getTile(int x, int y);                   //char returning from "map" vector levelData
 	void setTile(int x, int y, char tile);       //char setting in vector levelData
-	void interact(int enemyIndex,int i);         //enemies combat/help interactions
 
 	void enemyGrit();                          //enemies interaction loop
+	void interact(int enemyIndex,int i);         //enemies combat/help interactions
+
+
 	 
 
 private:
